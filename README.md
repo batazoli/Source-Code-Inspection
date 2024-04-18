@@ -2,3 +2,10 @@ Source-Code-Inspection [![Build Status](https://travis-ci.org/Prof-Calebe/Source
 ======================
 
 Link para o Travis-CI: https://travis-ci.org/Prof-Calebe/Source-Code-Inspection
+
+
+Ciência da Computação 
+
+Giovana Ellero
+
+Vagner Batazoli
