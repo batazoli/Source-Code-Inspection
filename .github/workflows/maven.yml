@@ -33,7 +33,5 @@ jobs:
       working-directory: ticketmachine  # Define o diretório de trabalho para ticketmachine
       run: mvn -B package
     - name: Update dependency graph
-      working-directory: ticketmachine  # Define o diretório de trabalho para ticketmachine
-      run: |
-        cd $GITHUB_WORKSPACE/ticketmachine  # Muda para o diretório ticketmachine
-        mvn com.github.ferstl:depgraph-maven-plugin:4.0.1:graph
+      working-directory: $GITHUB_WORKSPACE/ticketmachine  # Define o diretório de trabalho para ticketmachine usando $GITHUB_WORKSPACE
+      run: mvn com.github.ferstl:depgraph-maven-plugin:4.0.1:graph
