@@ -1,0 +1,7 @@
+br\calebe\ticketmachine\core\TicketMachine.class
+br\calebe\ticketmachine\exception\TrocoInsuficienteException.class
+br\calebe\ticketmachine\core\Troco$TrocoIterator.class
+br\calebe\ticketmachine\exception\PapelMoedaInvalidaException.class
+br\calebe\ticketmachine\core\Troco.class
+br\calebe\ticketmachine\exception\SaldoInsuficienteException.class
+br\calebe\ticketmachine\core\PapelMoeda.class
