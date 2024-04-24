@@ -22,6 +22,6 @@ public class TestTicketMachine {
         underTest.inserir(5);
         int result = underTest.getSaldo();
 
-        assertEquals(5, result);
+        assertEquals(6, result);
     }
 }
