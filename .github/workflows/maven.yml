@@ -27,13 +27,9 @@ jobs:
         checkout-fetch-depth: 0
         java-version: 17
         java-distribution: temurin
-        maven-version: 3.8.7
+        cache: maven
     - name: Build with Maven
-      run: mvn compile
-    - name: Test with Maven
-      run: mvn test
-    - name: Clean with Maven
-      run: mvn clean
+      run: mvn -B package --file pom.xml
 
     # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
     - name: Update dependency graph
