@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>br.calebe.ticketmachine.core</groupId>
-    <artifactId>ticketmachine</artifactId>
+    <artifactId>Source-Code-Inspection</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
