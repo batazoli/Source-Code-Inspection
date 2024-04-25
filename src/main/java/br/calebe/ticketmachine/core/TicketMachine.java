@@ -83,4 +83,23 @@ public class TicketMachine {
         result += "*****************\n";
         return result;
     }
+    @Test
+    public void TesGetTroco() throws Throwable{
+        HashMap<Integer, Integer> saldo = new HashMap<Integer, Integer>(){{
+            put(2, 4);
+            put(5, 2);
+            put(10, 1);
+        }};
+
+        TicketMachine underTest = new TicketMachine(3, saldo);
+
+        underTest.inserir(5);
+
+        List<PapelMoeda> result = underTest.getTroco();
+        List<PapelMoeda> esperado = new  ArrayList<PapelMoeda>();
+        esperado.add(new PapelMoeda( 5, 1));
+   
+
+        assertEquals( esperado, result);
+    }
 }
