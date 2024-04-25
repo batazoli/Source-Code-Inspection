@@ -22,6 +22,25 @@ public class TestTicketMachine {
         underTest.inserir(5);
         int result = underTest.getSaldo();
 
-        assertEquals(6, result);
+        assertEquals(5, result);
+    }
+    @Test
+    public void TestImprimir() throws Throwable{
+        HashMap<Integer, Integer> saldo = new HashMap<Integer, Integer>(){{
+            put(2, 4);
+            put(5, 2);
+            put(10, 1);
+        }};
+
+        TicketMachine underTest = new TicketMachine(3, saldo);
+
+        underTest.inserir(5);
+
+        String result = underTest.imprimir();
+        String esperado = "*****************\n";
+        esperado += "*** R$ " + 2 + ",00 ****\n";
+        esperado += "*****************\n";
+
+        assertEquals( esperado, result);
     }
 }
