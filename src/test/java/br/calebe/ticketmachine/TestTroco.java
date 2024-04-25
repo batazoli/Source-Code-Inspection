@@ -6,7 +6,7 @@ import java.util.Iterator;
 import br.calebe.ticketmachine.core.*;
 
 public class TestTroco {
-    @Test
+    @Test(timeout = 5000)
     public void TestHasNext() throws Throwable{
         Iterator<PapelMoeda> underTest = new Troco(55).getIterator();
 
@@ -15,7 +15,7 @@ public class TestTroco {
         assertEquals(true, result);
     }
 
-    @Test
+    @Test(timeout = 5000)
     public void TestNext() throws Throwable{
         Iterator<PapelMoeda> underTest = new Troco(55).getIterator();
 
